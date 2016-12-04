@@ -21,5 +21,6 @@ factor_temperature_vector
 # Adding factor levels to a given dataset
 genders <- c("M", "F", "M", "M", "F")
 factor_genders <- factor(genders)
+factor_genders # print to see how factor_genders look right now
 levels(factor_genders) = c("Female", "Male") # make sure to add order in alphabetical order as factor groups elts in order
-factor_genders
+factor_genders # print again to see the made changes
