@@ -24,3 +24,17 @@ factor_genders <- factor(genders)
 factor_genders # print to see how factor_genders look right now
 levels(factor_genders) = c("Female", "Male") # make sure to add order in alphabetical order as factor groups elts in order
 factor_genders # print again to see the made changes
+
+
+#using the summary method
+survey_vector <- c("M", "F", "F", "M", "M")
+factor_survey_vector <- factor(survey_vector)
+levels(factor_survey_vector) <- c("Female", "Male")
+survey_vector
+factor_survey_vector
+
+# Generate summary for survey_vector
+summary(survey_vector)
+
+# Generate summary for factor_survey_vector
+summary(factor_survey_vector)
