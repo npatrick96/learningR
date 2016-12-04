@@ -17,3 +17,9 @@ factor_animals_vector
 temperature_vector <- c("High", "Low", "High","Low", "Medium")
 factor_temperature_vector <- factor(temperature_vector, order = TRUE, levels = c("Low", "Medium", "High"))
 factor_temperature_vector
+
+# Adding factor levels to a given dataset
+genders <- c("M", "F", "M", "M", "F")
+factor_genders <- factor(genders)
+levels(factor_genders) = c("Female", "Male") # make sure to add order in alphabetical order as factor groups elts in order
+factor_genders
