@@ -38,3 +38,15 @@ summary(survey_vector)
 
 # Generate summary for factor_survey_vector
 summary(factor_survey_vector)
+
+# Creating and using ordered factors from vectors.
+# By default, the function factor() transforms a vector into an unordered factor.
+# To create an ordered factor, you have to add two additional arguments: ordered and levels.
+# By setting the argument ordered to TRUE in the function factor(), you indicate that the factor is ordered.
+# With the argument levels you give the values of the factor in the correct order.
+
+speed_vector <- c("fast", "slow", "slow", "fast", "insane")
+factor_speed_vector <- factor(speed_vector, ordered=TRUE, levels=c("slow", "fast", "insane"))
+factor_speed_vector
+summary(factor_speed_vector)
+
